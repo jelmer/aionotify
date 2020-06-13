@@ -36,7 +36,7 @@ Its use is quite simple:
     watcher.watch(alias='logs', path='/var/log', flags=aionotify.Flags.MODIFY)
 
     # Prepare the loop
-    loop = asyncio.get_eventloop()
+    loop = asyncio.get_event_loop()
 
     async def work():
         await watcher.setup(loop)
